@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  --main-color: #101010;
+  --background-color: white;
+  --accents-color: #1d9e9e;
+  --secondary-color: #1d9e53;
+  --main-font: Raleway;
+  --secondary-font: Montserrat;
+}
+.dark-mode:root {
+  --main-color: white;
+  --background-color: #101010;
+}
+.dark-mode * {
+  text-shadow: 0 0 10px var(--main-color);
+}
+* {
+  background-color: var(--background-color);
+  padding: none;
+  margin: none;
+  font-family: Raleway;
+  color: var(--main-color);
+}
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: Montserrat;
+  font-weight: 800;
+  background: linear-gradient(
+    to right,
+    var(--accents-color),
+    var(--secondary-color)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
