@@ -1,4 +1,3 @@
-/* 
 window.onload = function () {
   if (window.localStorage.getItem("dark_mode") === "true") {
     darkMode();
@@ -10,5 +9,3 @@ function darkMode() {
   var dark = element.classList.toggle("dark-mode");
   window.localStorage.setItem("dark_mode", dark);
 }
-
-*/
