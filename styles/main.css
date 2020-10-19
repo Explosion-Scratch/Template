@@ -11,11 +11,14 @@
 .dark-mode:root {
   --main-color: white;
   --background-color: #101010;
+  --accents-color: #5af0f0;
+  --secondary-color: #78ff42;
 }
-.dark-mode * {
-  text-shadow: 0 0 10px var(--main-color);
-}
+
 * {
+  transition-property: background-color, color, opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-out;
   background-color: var(--background-color);
   padding: none;
   margin: none;
@@ -34,12 +37,11 @@ h4,
 h5 {
   font-family: Montserrat;
   font-weight: 800;
-  background: linear-gradient(
-    to right,
-    var(--accents-color),
-    var(--secondary-color)
-  );
+  background: linear-gradient(to right, var(--accents-color), yellow);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+a {
+  color: var(--link);
 }
